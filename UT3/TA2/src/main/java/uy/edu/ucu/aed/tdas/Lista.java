@@ -13,6 +13,7 @@ public class Lista<T> implements ILista<T> {
             this.dato = dato;
         }
     }
+    private int elementos;
 
     private Nodo<T> primero;
 
@@ -22,7 +23,6 @@ public class Lista<T> implements ILista<T> {
 
     @Override
     public void insertar(T dato, Comparable clave) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
     }
 
@@ -52,13 +52,13 @@ public class Lista<T> implements ILista<T> {
 
     @Override
     public int cantElementos() {
-        // TODO Auto-generated method stub
+
         throw new UnsupportedOperationException("Unimplemented method 'cantElementos'");
     }
 
     @Override
     public boolean esVacia() {
-        // TODO Auto-generated method stub
+        return (primero == null);
         throw new UnsupportedOperationException("Unimplemented method 'esVacia'");
     }
 }
